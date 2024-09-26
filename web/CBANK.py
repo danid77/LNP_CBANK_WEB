@@ -46,7 +46,7 @@ select_display = st.selectbox("표준화 모드 선택", stn_display)
 select_stn = stn_value[stn_display.index(select_display)]
 
 # Isomer 옵션 선택
-select_isomer = st.radio("Isomer 유지 여부", ("Yes", "No"))
+select_isomer = st.radio("Isomer 여부", ("Yes", "No"))
 
 # API 요청 함수
 def postRequest(url, payload, files=None):

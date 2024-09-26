@@ -1,5 +1,6 @@
 import pubchempy as pcp
 from rdkit import Chem
+from rdkit.Chem import AllChem
 from rdkit.Chem import SDWriter
 from chembl_webresource_client.new_client import new_client
 from openbabel import openbabel
@@ -49,10 +50,13 @@ def getCanonicalIsomerSmiles(smiles, stereo_value):
         return "Invalid SMILES input."
     
     try:
-        canonical_smiles = Chem.MolToSmiles(mol, canonical=True, isomericSmiles=stereo_value)
+        isomers = list(AllChem.EnumerateStereoisomers(mol))
+        canonical_smiles = [Chem.MolToSmiles(isomer, isomericSmiles=stereo_value) for isomer in isomers][0]
+        print(canonical_smiles)
     except Exception as e:
         print(f"Warning: stereochemistry handling failed. Error: {str(e)}")
         canonical_smiles = Chem.MolToSmiles(mol, canonical=True, isomericSmiles=False)
+        print("isomer 에러")
     
     return canonical_smiles
 
