@@ -2,11 +2,10 @@
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Chemical 입력 문자열 타입](#Chemical 입력 문자열 타입)
+- [표준화 선택](#표준화 선택)
+- [이미지 생성 ](#이미지 생성 )
+- [web server 실행](#web server 실행)
 
 ## Chemical 입력 문자열 타입
 - SMILES
