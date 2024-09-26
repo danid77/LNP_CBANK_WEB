@@ -19,7 +19,7 @@ type_display = ["SMILES", "Inchi_key", "Inchi", "IUPAC", "Peptide", "SMARTS", "S
 type_value = ["smiles", "inchi_key", "inchi", "iupac", "peptide", "smarts", "sdf", "mol2"]
 
 # 사용자가 선택한 값을 실제로 사용할 값으로 매핑
-input_type_display = st.selectbox("표준화 모드 선택", type_display)
+input_type_display = st.selectbox("Chemical 입력 문자열 타입", type_display)
 input_type = type_value[type_display.index(input_type_display)]
 
 # # 입력 형식 선택
