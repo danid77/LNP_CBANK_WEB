@@ -29,7 +29,7 @@
 
 2. **Navigate to the project directory**:
     ```bash
-    cd LNP_CBANK_WEB
+    cd LNP_CBANK_WEB/web
     ```
 
 3. **Create and activate a virtual environment** (recommended):
