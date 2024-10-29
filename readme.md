@@ -29,7 +29,7 @@
 
 2. **Navigate to the project directory**:
     ```bash
-    cd LNP_CBANK_WEB/web
+    cd LNP_CBANK_WEB
     ```
 
 3. **Create and activate a virtual environment** (recommended):
@@ -37,8 +37,12 @@
     conda env create -f enviroment.yml
     conda activate to_smiles
     ```
+4. **Move to the execution directory**:
+    ```bash
+    cd wdb
+    ```
 
-4. **run**
+5. **run**
 - [server 창 2개를 활용해야함]
 - [backend]
     ```bash
