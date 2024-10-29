@@ -37,9 +37,10 @@
     conda env create -f enviroment.yml
     conda activate to_smiles
     ```
+    
 4. **Move to the execution directory**:
     ```bash
-    cd wdb
+    cd web
     ```
 
 5. **run**
