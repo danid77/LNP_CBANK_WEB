@@ -5,11 +5,11 @@ from PIL import Image
 import base64
 
 # FastAPI 백엔드 URL
-BACKEND_URL_CONVERT = "http://localhost:8503/convert/"
-BACKEND_URL_CONVERT_FILE = "http://localhost:8503/convert_file/"
-BACKEND_URL_STN = "http://localhost:8503/stn/"
-BACKEND_URL_ISOMER = "http://localhost:8503/isomer/"
-BACKEND_URL_IMAGES = "http://localhost:8503/images/"  # 이미지 생성용 백엔드 URL
+BACKEND_URL_CONVERT = "http://localhost:8080/convert/"
+BACKEND_URL_CONVERT_FILE = "http://localhost:8080/convert_file/"
+BACKEND_URL_STN = "http://localhost:8080/stn/"
+BACKEND_URL_ISOMER = "http://localhost:8080/isomer/"
+BACKEND_URL_IMAGES = "http://localhost:8080/images/"  # 이미지 생성용 백엔드 URL
 
 # 페이지 제목
 st.title("Chemical Converter with Multiple Images")
