@@ -52,5 +52,5 @@
 
 - [frontend]
     ```bash
-    streamlit run frontend.py --server.port 8501
+    streamlit run CBANK.py --server.port 8501
     ```
